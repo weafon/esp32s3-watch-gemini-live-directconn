@@ -1,11 +1,12 @@
 # esp32s3-watch-gemini-live-directconn
 
-這裡提供下載的韌體檔案 是專門build給Waveshare ESP32-S3-Touch-AMOLED-1.75 or ESP32-S3 2.06寸 AMOLED 
+這裡提供下載的韌體檔案 是專門build給Waveshare ESP32-S3-Touch-AMOLED-1.75 or ESP32-S3 2.06寸 AMOLED <BR>
+The firmware file available for download here is specifically built for the Waveshare ESP32-S3-Touch-AMOLED-1.75 or ESP32-S3 2.06-inch AMOLED displays.<BR>
 https://www.waveshare.net/shop/ESP32-S3-Touch-AMOLED-1.75.htm </p>
 https://www.waveshare.net/shop/ESP32-S3-Touch-AMOLED-2.06-EN.htm </p>
-
-這韌體 提供 直接透過WiFi 連上Gemini Live 進行具有情緒感知的語音對話
-不需要中間架設伺服器轉接
+<H1>功能簡介</H1>
+這韌體 提供 直接透過WiFi 連上Gemini Live 進行具有情緒感知的語音對話, 不需要中間架設伺服器轉接<BR>
+This firmware allows for direct WiFi connection to Gemini Live for emotion-aware voice conversations without the need for an intermediary server. <BR>
 <img width="441" height="461" alt="image" src="https://github.com/user-attachments/assets/cc4784ab-1fff-4057-b44d-a70daf7a0d6e" /> <BR>
 
 底下是DEMO影片 (via facebook or youtube) 
@@ -31,7 +32,26 @@ AI外的實用功能:
 5. 隨著手錶角度 移動眼珠的無聊喵喵<BR>
 <img width="340" height="388" alt="image" src="https://github.com/user-attachments/assets/af74aba9-f738-4bac-8a34-6a16c75e6cfb" /><BR>
 
+6. 手機如果有裝特定APP可以把訊息 整10分鐘倍數時 轉發到手錶. (手錶整點10分鐘時 會醒來啟動藍芽然後再休眠)<BR>
 
+<H1>開關機, 電源相關重要訊息</H1>
+
+1.手錶在 有USB供電時, 如果熄滅 可以藉由碰觸螢幕喚醒<BR>
+2. 單純電池供電時, 螢幕五秒會熄滅<BR>
+3A. 使用鋰電池請多加小心. 本軟體不負鋰電池或設備使用造成損失的賠償責任 . 此設備由硬體電源管理晶片控制充電 . 在醒著或輕度睡眠下, UI電源控制畫面 可以選擇強制關閉充電或開啟充電. 
+在完全關機下 也可以充電, 但充電節奏完全由電源控制晶片控制<BR>
+3B. 充電時可能會到40多度, 螢幕超過37度就會顯示紅色的字. 停止充電後, 如果溫度還高, 會自動重開機. 一兩次後溫度就會降回30度左右.<Br>
+4. 充電允許開啟狀態下, 電源到70%下會啟動自動充電. 也可以按"!"強制啟動.<BR>
+5. 充到100%, 電源晶片會自動停止充電. 但如果看到畫面顯示一下充一下不充, 請按強制關閉充電. 表示你電池已經老舊. 目前參數設定是預設的充到4.2V and 100mA電流以下, 電源晶片會停止充電.<BR>
+6. 螢幕熄滅15秒後, 會lightsleep, 要藉由模擬手碗舉起扭轉晃動 喚醒<BR>
+7. 每5分鐘手表會自動醒來與手機APP的藍芽同步 如果手錶APP有攔截到訊息 會從手機發送到手錶 (需安裝特定手機APP)<BR>
+8. 如果擺著不動 超過45分鐘. 為了省電會自動關機. <BR>
+9. 這時要輕按一下外殼右側 SD插槽 上方按鈕. 放開後會開機,不過螢幕大約三秒內才會亮起, <BR>
+10. 同樣的按鍵 長按六秒 硬體電源管理晶片 會關機 (任何緊急情況 都可以使用)<BR>
+11. 插著USB當時中用的時候, 到了晚上9:30~06:00 螢幕會熄滅, 但系統還開著 碰一下會亮起, 三四秒後會熄掉<BR>
+12. 整點會發出咚一聲..<BR>
+
+<H1>起始設定</H1>
 
 系統一開始 為了要取得能連上Internet的 WiFi account/password , 會先開起一個名為ESP-WATCH的WIFI基地台. <BR>
 請用手機選擇連上這個基地台後, 掃描QRCODE開啟瀏覽器進行設定. <BR>
@@ -43,9 +63,10 @@ AI外的實用功能:
 成功後會得到提示, 但畫面依舊留在這頁. <BR>
 <img width="456" height="140" alt="image" src="https://github.com/user-attachments/assets/66e552e2-4da0-4d1d-95e4-72a1de9503f2" /> <BR>
 
-不過這時手表會自動重開機, 並使用你提供的WIFI開始對時.<BR>
+另一方面, 手表會自動重開機, 並透過你提供的WIFI,連上internet ntp進行自動對時.<BR>
 <img width="436" height="553" alt="image" src="https://github.com/user-attachments/assets/20098ddb-4377-4864-a829-51795f494017" />
 
+<H1>Gemini AI KEY取得與輸入</H1>
 目前使用的Gemini Live 是免費的測試版本model: models/gemini-2.5-flash-native-audio-preview-12-2025 <BR>
 儘管免費, 為了進行Gemini Live, 你得在gemini studio申請一把key. 
 https://aistudio.google.com/api-keys <BR>
@@ -54,7 +75,10 @@ https://aistudio.google.com/api-keys <BR>
 事實上google提供每個新帳號300美金的有限時間試用 根本用不掉 就到期了. </p>
 
 anyway, 在你拿到key之後, 一樣透過手錶提供的網頁 輸入KEY。 <BR>
-請滑動你的手表 來找QRCODE, 先從時間頁開始 <BR>
+請滑動你的手表 來找QRCODE. 手錶的UI展開是一個如下的圖案, 起始點是時間頁 範例時間是15:41
+<img width="887" height="704" alt="image" src="https://github.com/user-attachments/assets/5097362e-1a7c-4de8-a9d7-6823f6755307" />
+
+先從時間頁, 範例中時間是15:41 開始 <BR>
 <img width="436" height="553" alt="image" src="https://github.com/user-attachments/assets/20098ddb-4377-4864-a829-51795f494017" /> <BR>
 把畫面往右方拖拉滑過去 會看到 <BR>
 <img width="427" height="412" alt="image" src="https://github.com/user-attachments/assets/d3359efe-1d6c-46ae-afba-d6eccf316c01" /> <BR>
