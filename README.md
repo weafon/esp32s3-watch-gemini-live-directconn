@@ -53,8 +53,9 @@ AI外的實用功能:
 
 <H1>起始設定</H1>
 
-系統一開始 為了要取得能連上Internet的 WiFi account/password , 會先開起一個名為ESP-WATCH的WIFI基地台. <BR>
-請用手機選擇連上這個基地台後, 掃描QRCODE開啟瀏覽器進行設定. <BR>
+系統一開始 為了要取得能連上Internet的 WiFi account/password , 會先開起一個名為WATCH的WIFI基地台. <BR>
+<img width="392" height="376" alt="image" src="https://github.com/user-attachments/assets/fdef8a69-5512-441c-939a-68400822096f" />
+請用手機選擇連上這個基地台後, 掃描手錶螢幕上的QRCODE開啟瀏覽器進行後續設定. <BR>
 在手機瀏覽器上會看到底下畫面, 等他幾秒鐘下載完成, 太快點會沒反應</p>
 <img width="717" height="566" alt="image" src="https://github.com/user-attachments/assets/fc5a5e89-70e1-4be8-b6b5-a3c8617cc8f3" /><BR>
 等他幾秒鐘下載完成, 點選WiFi存取點設定, 會看到底下畫面, 接著打入你的WiFi帳號密碼, 可以多組 然後按送出WiFi設定 <BR>
