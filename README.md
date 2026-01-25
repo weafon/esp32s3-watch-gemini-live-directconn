@@ -12,6 +12,27 @@ https://www.waveshare.net/shop/ESP32-S3-Touch-AMOLED-2.06-EN.htm </p>
 https://www.facebook.com/share/v/1aFy7rsWeZ/ or
 https://youtube.com/shorts/7TGrHV79h8U?feature=share </p>
 
+AI外的實用功能:
+
+1. 提供載具條碼或會員QRCODE甚至於是 數位禮卷QRCODE顯示 方便平常購物掃描
+   (請在掃描的WEB網頁畫面點選 標籤與序號設定, 載具建議選code39編碼, 大全聯紙本會員固定卡號選 code128, 其他大部分都可以用QRCODE) <BR>
+   <img width="449" height="494" alt="image" src="https://github.com/user-attachments/assets/eb6144ac-52a1-4ca6-82e5-0cefe39c8cb7" /> <BR>
+
+2. 及時新竹客運從台北新竹的車號, 以及站點追蹤 (如果你GEMINI AI設定成功, 這邊會同步發出聲音報告車況). 或 往台北在馬偕站上車的等待時間<BR>
+   <img width="441" height="462" alt="image" src="https://github.com/user-attachments/assets/ab8fe93c-1c4f-4e10-b289-424015eb5d82" /><BR>
+<img width="454" height="469" alt="image" src="https://github.com/user-attachments/assets/2b212dc8-d23b-48a1-8913-e3d4b3bba932" /><BR>
+
+3. 基於個人五行, 所反映的當下時間的五行十神曆 . 以及當天及當月 由五行生剋所計算的分數 (需要在WEB畫面點選個人基本資料 輸入生日 及時間)<BR>
+<img width="444" height="508" alt="image" src="https://github.com/user-attachments/assets/c7c17d9a-00b7-4201-8d64-bbbb5cc519e9" /> <BR>
+
+4. 天氣查詢 (需要填入TWMOE_API_KEY)<BR>
+ <img width="435" height="413" alt="image" src="https://github.com/user-attachments/assets/6851ea9e-6801-4583-a5d3-6a6975730e1a" /><BR>
+
+5. 隨著手錶角度 移動眼珠的無聊喵喵<BR>
+<img width="340" height="388" alt="image" src="https://github.com/user-attachments/assets/af74aba9-f738-4bac-8a34-6a16c75e6cfb" /><BR>
+
+
+
 系統一開始 為了要取得能連上Internet的 WiFi account/password , 會先開起一個名為ESP-WATCH的WIFI基地台. <BR>
 請用手機選擇連上這個基地台後, 掃描QRCODE開啟瀏覽器進行設定. <BR>
 在手機瀏覽器上會看到底下畫面, 等他幾秒鐘下載完成, 太快點會沒反應</p>
@@ -64,11 +85,16 @@ TDX_CLIENT_ID 與 TDX_CLIENT_SECRET 是要連到 及時公路客運狀況的 htt
 <img width="450" height="513" alt="image" src="https://github.com/user-attachments/assets/da3be03d-c102-4661-91fb-f67a3572bb3c" />
 
 按下CALL鍵 就會企圖連上Gemini Live
-(Wifi用完會30秒後為了省電會自動關閉, 所以如果WIFI斷線, 在這邊會預先花點時間連上WIFI)  <BR>
+(Wifi用完會30秒後為了省電會自動關閉, 所以如果WIFI斷線, 在這邊會預先花點時間連上WIFI) <BR>
+畫面出現轉轉時 會暫時限制滑動 因為在連線網路 最好不要動它... <BR>
 <img width="431" height="500" alt="image" src="https://github.com/user-attachments/assets/baccca12-09f5-452d-a707-e8a6b52c0dc7" /> <BR>
+
 <img width="435" height="505" alt="image" src="https://github.com/user-attachments/assets/1e39c74f-c864-4852-9d5e-9a4fbba20990" /> <BR>
 <img width="441" height="461" alt="image" src="https://github.com/user-attachments/assets/cc4784ab-1fff-4057-b44d-a70daf7a0d6e" /> <BR>
 不講話44秒後會斷線. 自己按下HangUp也會掛上 (要是不幸當機 三秒後會自動重開.)
+
+
+   
 
 
 
