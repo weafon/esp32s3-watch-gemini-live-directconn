@@ -6,12 +6,14 @@ https://www.waveshare.net/shop/ESP32-S3-Touch-AMOLED-1.75.htm </p>
 https://www.waveshare.net/shop/ESP32-S3-Touch-AMOLED-2.06-EN.htm </p>
 <H1>功能簡介</H1>
 這韌體 提供 直接透過WiFi 連上Gemini Live 進行具有情緒感知的語音對話, 不需要中間架設伺服器轉接<BR>
+
 This firmware allows for direct WiFi connection to Gemini Live for emotion-aware voice conversations without the need for an intermediary server. <BR>
 <img width="441" height="461" alt="image" src="https://github.com/user-attachments/assets/cc4784ab-1fff-4057-b44d-a70daf7a0d6e" /> <BR>
 
 底下是DEMO影片 (via facebook or youtube) 
 https://www.facebook.com/share/v/1aFy7rsWeZ/ or
-https://youtube.com/shorts/7TGrHV79h8U?feature=share </p>
+https://youtube.com/shorts/7TGrHV79h8U?feature=share or 
+https://portaly.cc/Timemate </p>
 
 AI外的實用功能:
 
@@ -32,7 +34,7 @@ AI外的實用功能:
 5. 隨著手錶角度 移動眼珠的無聊喵喵<BR>
 <img width="340" height="388" alt="image" src="https://github.com/user-attachments/assets/af74aba9-f738-4bac-8a34-6a16c75e6cfb" /><BR>
 
-6. 手機如果有裝特定APP可以把訊息 整10分鐘倍數時 轉發到手錶. (手錶整點10分鐘時 會醒來啟動藍芽然後再休眠)<BR>
+6. 手機如果有裝特定APP可以把訊息 整5分鐘倍數時 轉發到手錶. (手錶整5分鐘時 也會醒來啟動藍芽然後再休眠)<BR>
 
 <H1>開關機, 電源相關重要訊息</H1>
 
