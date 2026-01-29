@@ -1,6 +1,6 @@
 # esp32s3-watch-gemini-live-directconn
 
-這裡提供下載的韌體檔案 是專門build給Waveshare ESP32-S3-Touch-AMOLED-1.75 or ESP32-S3 2.06寸 AMOLED <BR>
+這裡提供下載的韌體檔案 是專門build給Waveshare ESP32-S3-Touch-AMOLED-1.75 . ( 稍後會補上 ESP32-S3 2.06寸 AMOLED 用的韌體) <BR>
 The firmware file available for download here is specifically built for the Waveshare ESP32-S3-Touch-AMOLED-1.75 or ESP32-S3 2.06-inch AMOLED displays.<BR>
 https://www.waveshare.net/shop/ESP32-S3-Touch-AMOLED-1.75.htm </p>
 https://www.waveshare.net/shop/ESP32-S3-Touch-AMOLED-2.06-EN.htm </p>
@@ -40,7 +40,7 @@ AI外的實用功能:
 韌體燒錄的時候 還不需要先裝電池. 先用USB供電即可. 燒錄也是透過USB. <BR>
 
 windows下的燒錄工具 可以從wareshare官方網址下載 : https://www.waveshare.net/wiki/Flash%E5%9B%BA%E4%BB%B6%E7%9A%84%E7%83%A7%E5%BD%95%E4%B8%8E%E6%93%A6%E9%99%A4 <BR>
-可以參考該網址說明文件操作, 然後要燒錄的韌體bin檔 就是與此說明文件同目錄的 esp-watch-total.bin。<BR>
+可以參考該網址說明文件操作, 然後要燒錄的韌體bin檔 就是與此說明文件同目錄的 esp-watch-total.bin (專門給Waveshare ESP32-S3-Touch-AMOLED-1.75用的喔)。<BR>
 建議燒錄前 esp設備上電前 按著boot鍵, 然後上電, 大致就可以放開. 這樣確保ESP設備進入 等待燒錄模式 (特別是第一次燒失敗或有其他CODE) 。
 所謂boot鍵: 當sd卡槽在右邊時, 他下方的按鍵是boot鍵。ps. 速度是選1152000 有三個零喔,不是兩個零喔<BR>
 真的開始燒了會看到底下畫面<BR>
