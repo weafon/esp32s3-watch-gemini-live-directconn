@@ -34,7 +34,21 @@ AI外的實用功能:
 5. 隨著手錶角度 移動眼珠的無聊喵喵<BR>
 <img width="340" height="388" alt="image" src="https://github.com/user-attachments/assets/af74aba9-f738-4bac-8a34-6a16c75e6cfb" /><BR>
 
-6. 手機如果有裝特定APP可以把訊息 整5分鐘倍數時 轉發到手錶. (手錶整5分鐘時 也會醒來啟動藍芽然後再休眠)<BR>
+6. (測試中, 下一版release) 手機如果有裝特定APP可以把訊息 整5分鐘倍數時 轉發到手錶. (手錶整5分鐘時 也會醒來啟動藍芽然後再休眠)<BR>
+
+<H1> 韌體燒錄 </H1>
+韌體燒錄的時候 還不需要先裝電池. 先用USB供電即可. 燒錄也是透過USB. <BR>
+
+windows下的燒錄工具 可以從wareshare官方網址下載 : https://www.waveshare.net/wiki/Flash%E5%9B%BA%E4%BB%B6%E7%9A%84%E7%83%A7%E5%BD%95%E4%B8%8E%E6%93%A6%E9%99%A4 <BR>
+可以參考該網址說明文件操作, 然後要燒錄的韌體bin檔 就是與此說明文件同目錄的 esp-watch-total.bin。<BR>
+建議燒錄前 esp設備上電前 按著boot鍵, 然後上電, 大致就可以放開. 這樣確保ESP設備進入 等待燒錄模式 (特別是第一次燒失敗或有其他CODE) 。
+所謂boot鍵: 當sd卡槽在右邊時, 他下方的按鍵是boot鍵。ps. 速度是選1152000 有三個零喔,不是兩個零喔<BR>
+真的開始燒了會看到底下畫面<BR>
+<img width="611" height="652" alt="image" src="https://github.com/user-attachments/assets/94c5af0f-c556-45d4-be94-878b985fa101" /><BR>
+燒完 會驗證 然後最後會出現:<BR>
+<img width="609" height="651" alt="image" src="https://github.com/user-attachments/assets/48b85c39-0180-42b1-9a66-e0dab7d2a22a" /><BR>
+燒錄完, 拔開USB重新上電即可.
+
 
 <H1>開關機, 電源相關重要訊息</H1>
 
@@ -56,8 +70,10 @@ AI外的實用功能:
 <H1>起始設定</H1>
 
 系統一開始 為了要取得能連上Internet的 WiFi account/password , 會先開起一個名為WATCH的WIFI基地台. <BR>
-<img width="392" height="376" alt="image" src="https://github.com/user-attachments/assets/fdef8a69-5512-441c-939a-68400822096f" />
-請用手機選擇連上這個基地台後, 掃描手錶螢幕上的QRCODE開啟瀏覽器進行後續設定. <BR>
+<img width="392" height="376" alt="image" src="https://github.com/user-attachments/assets/fdef8a69-5512-441c-939a-68400822096f" /><BR>
+請用手機選擇連上這個基地台後, <BR>
+
+掃描手錶螢幕上的QRCODE開啟瀏覽器進行後續設定. <BR>
 在手機瀏覽器上會看到底下畫面, 等他幾秒鐘下載完成, 太快點會沒反應</p>
 <img width="717" height="566" alt="image" src="https://github.com/user-attachments/assets/fc5a5e89-70e1-4be8-b6b5-a3c8617cc8f3" /><BR>
 等他幾秒鐘下載完成, 點選WiFi存取點設定, 會看到底下畫面, 接著打入你的WiFi帳號密碼, 可以多組 然後按送出WiFi設定 <BR>
@@ -107,9 +123,9 @@ TDX_CLIENT_ID 與 TDX_CLIENT_SECRET 是要連到 及時公路客運狀況的 htt
 設定完 請反向 滑回時間頁
 然後再把畫面往上托拉兩回. 
 第一回 會看到 <BR>
-<img width="410" height="481" alt="image" src="https://github.com/user-attachments/assets/c7f29bf5-44a6-4139-acf6-0b9d547e982e" />
+<img width="410" height="481" alt="image" src="https://github.com/user-attachments/assets/c7f29bf5-44a6-4139-acf6-0b9d547e982e" /><BR>
 第二回就會看到 <BR>
-<img width="450" height="513" alt="image" src="https://github.com/user-attachments/assets/da3be03d-c102-4661-91fb-f67a3572bb3c" />
+<img width="450" height="513" alt="image" src="https://github.com/user-attachments/assets/da3be03d-c102-4661-91fb-f67a3572bb3c" /><BR>
 
 按下CALL鍵 就會企圖連上Gemini Live
 (Wifi用完會30秒後為了省電會自動關閉, 所以如果WIFI斷線, 在這邊會預先花點時間連上WIFI) <BR>
