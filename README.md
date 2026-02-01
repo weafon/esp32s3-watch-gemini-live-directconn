@@ -4,11 +4,14 @@
 The firmware file available for download here is specifically built for the Waveshare ESP32-S3-Touch-AMOLED-1.75 or ESP32-S3 2.06-inch AMOLED displays.<BR>
 https://www.waveshare.net/shop/ESP32-S3-Touch-AMOLED-1.75.htm </p>
 https://www.waveshare.net/shop/ESP32-S3-Touch-AMOLED-2.06-EN.htm </p>
+
+<img width="100" height="100" alt="qr-code" src="https://github.com/user-attachments/assets/d3ffea72-c36f-4faa-8172-cbdcb930d77f" /><BR>
 <H1>功能簡介</H1>
 這韌體 提供 直接透過WiFi 連上Gemini Live 進行具有情緒感知的語音對話, 不需要中間架設伺服器轉接<BR>
 
 This firmware allows for direct WiFi connection to Gemini Live for emotion-aware voice conversations without the need for an intermediary server. <BR>
 <img width="441" height="461" alt="image" src="https://github.com/user-attachments/assets/cc4784ab-1fff-4057-b44d-a70daf7a0d6e" /> <BR>
+
 
 底下是DEMO影片 (via facebook or youtube) 
 https://www.facebook.com/share/v/1aFy7rsWeZ/ or
@@ -137,6 +140,13 @@ TDX_CLIENT_ID 與 TDX_CLIENT_SECRET 是要連到 及時公路客運狀況的 htt
 <img width="435" height="505" alt="image" src="https://github.com/user-attachments/assets/1e39c74f-c864-4852-9d5e-9a4fbba20990" /> <BR>
 <img width="441" height="461" alt="image" src="https://github.com/user-attachments/assets/cc4784ab-1fff-4057-b44d-a70daf7a0d6e" /> <BR>
 不講話44秒後會斷線. 自己按下HangUp也會掛上 (要是不幸當機 三秒後會自動重開.)
+
+
+
+
+
+
+
 
 
    
