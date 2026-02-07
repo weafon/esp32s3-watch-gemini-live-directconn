@@ -5,7 +5,9 @@ The firmware file available for download here is specifically built for the Wave
 https://www.waveshare.net/shop/ESP32-S3-Touch-AMOLED-1.75.htm </p>
 https://www.waveshare.net/shop/ESP32-S3-Touch-AMOLED-2.06-EN.htm </p>
 
+
 <img width="100" height="100" alt="qr-code" src="https://github.com/user-attachments/assets/d3ffea72-c36f-4faa-8172-cbdcb930d77f" /><BR>
+source code: https://shopee.tw/product/36762878/47205726916/ <BR>
 <H1>功能簡介</H1>
 這韌體 提供 直接透過WiFi 連上Gemini Live 進行具有情緒感知的語音對話, 不需要中間架設伺服器轉接<BR>
 
